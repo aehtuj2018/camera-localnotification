@@ -13,5 +13,22 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="take_picture()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-img [src]="capturedSnapURL"></ion-img>
+  
+  <ion-button (click)="notification_1()">10 Seconds</ion-button>
+  <br>
+  <ion-button (click)="notification_2()">Everyday 8 AM</ion-button>
+  <br>
+
+  <ion-button (click)="notification_3()">Every 50 Seconds</ion-button>
+
+
+
+ 
 </ion-content>
